@@ -6,7 +6,7 @@ from io import BytesIO
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app, resources={r"/convert": {"origins": "http://localhost:8060"}})
+CORS(app, resources={r"/convert": {"origins": "*"}})
 
 # Folder to store temporary spritesheets
 TEMP_FOLDER = "temp_spritesheets"
