@@ -5,6 +5,7 @@ from PIL import Image, ImageSequence
 from io import BytesIO
 
 app = Flask(__name__)
+CORS(app, resources={r"/convert": {"origins": "http://localhost:8060"}})
 
 # Folder to store temporary spritesheets
 TEMP_FOLDER = "temp_spritesheets"
