@@ -3,6 +3,7 @@ import requests
 from flask import Flask, request, jsonify, send_file
 from PIL import Image, ImageSequence
 from io import BytesIO
+from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app, resources={r"/convert": {"origins": "http://localhost:8060"}})
