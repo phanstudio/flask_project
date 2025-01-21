@@ -2,3 +2,4 @@ Flask==3.1.0  # Replace with your Flask version
 gunicorn==23.0.0  # Gunicorn for serving the app in production
 requests==2.32.3
 pillow==11.1.0
+Flask-Cors==5.0.0
